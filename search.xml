@@ -7,10 +7,19 @@
       <categories>
         <category>前端</category>
       </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[对于overflow的理解]]></title>
     <url>%2Fpost%2F557b5e42.html</url>
     <content type="text"><![CDATA[给元素设置了该属性后，当该元素的内容超过给定的宽度和高度的属性时，那么超出的部分会被隐藏，并且不占用位置； Html: 12345&lt;div class=&quot;box&quot;&gt; &lt;p&gt;内容文本内容文本内容文本内容文本&lt;/p&gt; &lt;p&gt;内容文本内容文本内容文本内容文本&lt;/p&gt; &lt;p&gt;内容文本内容文本内容文本内容文本&lt;/p&gt;&lt;/div&gt; css: .box{ background: #57c06f; width: 105px; overflow: hidden; /规定文本不进行换行/ white-space: nowrap; } 当父级元素不设置高度，高度由子元素的内容自适应增加高度，子元素又设置了floor属性，那么子元素会脱离文档流，不占位，父级元素检测不到子元素的高度，父级元素的高度为0，造成页面塌陷，解决方法：给父级元素添加一个overflow:hidden属性，这样父级元素的高度可以随着子级元素的内容的高度自适应 （兼容性：IE较低的版本 需添加zoom:1属性） 解决外边距塌陷当父级元素内的子元素设置margin-top时，父级元素也会跟着下来，解决方法：给父级元素添加overflow:hidden属性]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
   </entry>
 </search>
