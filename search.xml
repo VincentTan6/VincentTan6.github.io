@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[对box-sizing的理解]]></title>
+    <title><![CDATA[对于box-sizing的理解]]></title>
     <url>%2Fpost%2F4ae88797.html</url>
     <content type="text"><![CDATA[对box-sizing的理解：它的值分别是content-box(默认) 、 border-box 以及 inheritcontent-box : width = contentborder-box : width = centent +margin + border + padding没有设置 –box-sizing:border-boxcontainer– content:480 height:0 border:16box– content:240 height:0 border:16 设置之后box– content:208 height:0 border:16 html: 1234&lt;div class=&quot;container&quot;&gt; &lt;div class=&quot;box&quot;&gt;&lt;/div&gt; &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;&lt;/div&gt; css: 1234567891011div.container&#123; width: 30em; border: 1em solid; background: red; &#125; div.box&#123; /* box-sizing:border-box; */ width:50%; border:1em solid blue; float: left; &#125;]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
   </entry>
   <entry>
     <title><![CDATA[对于overflow的理解]]></title>

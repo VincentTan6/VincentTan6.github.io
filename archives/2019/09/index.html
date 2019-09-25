@@ -47,9 +47,9 @@
     path: 'search.xml',
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     translation: {
-      copy_button: 'Kopieren',
-      copy_success: 'Kopiert',
-      copy_failure: 'Kopieren fehlgeschlagen'
+      copy_button: 'Copy',
+      copy_success: 'Copied',
+      copy_failure: 'Copy failed'
     },
     sidebarPadding: 40
   };
@@ -76,7 +76,7 @@
   };
 </script>
 
-  <title>Archiv | Hexo</title>
+  <title>Archive | Hexo</title>
   
 
 
@@ -130,7 +130,7 @@
   </div>
 
   <div class="site-nav-toggle">
-    <button aria-label="Navigationsleiste an/ausschalten">
+    <button aria-label="Toggle navigation bar">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -168,11 +168,22 @@
       
       
         
+        <li class="menu-item menu-item-标签">
+      
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+      
+      
+      
+        
         <li class="menu-item menu-item-分类">
       
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>分类</a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
 
   </li>
       
@@ -200,13 +211,16 @@
       <li class="menu-item menu-item-search">
         <a href="javascript:;" class="popup-trigger">
         
-          <i class="menu-item-icon fa fa-search fa-fw"></i> <br>Suche</a>
+          <i class="menu-item-icon fa fa-search fa-fw"></i> <br>Search</a>
       </li>
     
   </ul>
 
     
 
+  
+    
+    
   
     
     
@@ -234,7 +248,7 @@
   </span>
   <div class="search-input-container">
     <input autocomplete="off" autocorrect="off" autocapitalize="none"
-           placeholder="Suche..." spellcheck="false"
+           placeholder="Searching..." spellcheck="false"
            type="text" id="search-input">
   </div>
   <span class="popup-btn-close">
@@ -274,7 +288,7 @@
         
           
         
-        <span class="collection-header">Öhm..! Insgesamt 2 Artikel. Bleib dran.</span>
+        <span class="collection-header">Um..! 2 posts in total. Keep on posting.</span>
       </div>
       
 
@@ -296,7 +310,7 @@
       <h2 class="post-title">
         
           <a class="post-title-link" href="/post/4ae88797.html" itemprop="url">
-            <span itemprop="name">对box-sizing的理解</span>
+            <span itemprop="name">对于box-sizing的理解</span>
           </a>
         
       </h2>
@@ -373,10 +387,10 @@
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
-          Inhaltsverzeichnis
+          Table of Contents
         </li>
         <li class="sidebar-nav-overview">
-          Übersicht
+          Overview
         </li>
       </ul>
 
@@ -396,7 +410,20 @@
           <a href="/archives">
         
           <span class="site-state-item-count">2</span>
-          <span class="site-state-item-name">Artikel</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-categories">
+        
+          
+            <a href="/categories/">
+          
+        
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">categories</span>
         </a>
       </div>
     
@@ -422,9 +449,9 @@
   </span>
   <span class="author" itemprop="copyrightHolder">VincentTan</span>
 </div>
-  <div class="powered-by">Erstellt mit  <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0</div>
   <span class="post-meta-divider">|</span>
-  <div class="theme-info">Design – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.4.0</div>
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.4.0</div>
 
         
 
