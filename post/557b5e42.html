@@ -55,28 +55,32 @@
   };
 </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="给元素设置了该属性后，当该元素的内容超过给定的宽度和高度的属性时，那么超出的部分会被隐藏，并且不占用位置； Html:  12345&amp;lt;div class=&amp;quot;box&amp;quot;&amp;gt;    &amp;lt;p&amp;gt;内容文本内容文本内容文本内容文本&amp;lt;/p&amp;gt;    &amp;lt;p&amp;gt;内容文本内容文本内容文本内容文本&amp;lt;/p&amp;gt;    &amp;lt;p&amp;gt;内容文本内容文本内">
+<meta property="og:type" content="article">
+<meta property="og:title" content="对于overflow的理解">
+<meta property="og:url" content="http://yoursite.com/post/557b5e42.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="给元素设置了该属性后，当该元素的内容超过给定的宽度和高度的属性时，那么超出的部分会被隐藏，并且不占用位置； Html:  12345&amp;lt;div class=&amp;quot;box&amp;quot;&amp;gt;    &amp;lt;p&amp;gt;内容文本内容文本内容文本内容文本&amp;lt;/p&amp;gt;    &amp;lt;p&amp;gt;内容文本内容文本内容文本内容文本&amp;lt;/p&amp;gt;    &amp;lt;p&amp;gt;内容文本内容文本内">
 <meta property="og:locale" content="ZH-CN">
+<meta property="og:updated_time" content="2019-09-25T02:43:13.643Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-  <link rel="canonical" href="http://yoursite.com/">
+<meta name="twitter:title" content="对于overflow的理解">
+<meta name="twitter:description" content="给元素设置了该属性后，当该元素的内容超过给定的宽度和高度的属性时，那么超出的部分会被隐藏，并且不占用位置； Html:  12345&amp;lt;div class=&amp;quot;box&amp;quot;&amp;gt;    &amp;lt;p&amp;gt;内容文本内容文本内容文本内容文本&amp;lt;/p&amp;gt;    &amp;lt;p&amp;gt;内容文本内容文本内容文本内容文本&amp;lt;/p&amp;gt;    &amp;lt;p&amp;gt;内容文本内容文本内">
+  <link rel="canonical" href="http://yoursite.com/post/557b5e42">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: true,
-    isPost: false,
+    isHome: false,
+    isPost: true,
     isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>Hexo</title>
+  <title>对于overflow的理解 | Hexo</title>
   
 
 
@@ -244,94 +248,13 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
+
   <div id="posts" class="posts-expand">
-        <article itemscope itemtype="http://schema.org/Article">
+      <article itemscope itemtype="http://schema.org/Article">
   
   
   
-  <div class="post-block home">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/4ae88797.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="VincentTan">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-            
-            <a href="/post/4ae88797.html" class="post-title-link" itemprop="url">对box-sizing的理解</a>
-          
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
-
-              
-                
-              
-
-              <time title="Erstellt: 2019-09-25 11:21:23 / Geändert am: 11:28:16" itemprop="dateCreated datePublished" datetime="2019-09-25T11:21:23+08:00">2019-09-25</time>
-            </span>
-          
-            
-
-            
-          
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>对box-sizing的理解：它的值分别是content-box(默认) 、 border-box 以及 inherit<br>content-box : width = content<br>border-box  : width = centent +margin + border +  padding<br>没有设置 –box-sizing:border-box<br>container– content:480     height:0  border:16<br>box– content:240     height:0  border:16 </p>
-<p>设置之后<br>box– content:208 height:0 border:16</p>
-<blockquote>
-<p>html:</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;container&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;</span><br><span class="line">        &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>css:</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">div.container&#123;</span><br><span class="line">            width: 30em;</span><br><span class="line">            border: 1em solid;</span><br><span class="line">            background: red;</span><br><span class="line">        &#125;</span><br><span class="line">        div.box&#123;</span><br><span class="line">            /* box-sizing:border-box; */</span><br><span class="line">            width:50%;</span><br><span class="line">            border:1em solid blue;</span><br><span class="line">            float: left;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-          <div class="post-eof"></div>
-        
-      </footer>
-  </div>
-  
-  
-  
-  </article>
-
-    
-        <article itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block home">
+  <div class="post-block post">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/557b5e42.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -344,9 +267,8 @@
       <meta itemprop="name" content="Hexo">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-            
-            <a href="/post/557b5e42.html" class="post-title-link" itemprop="url">对于overflow的理解</a>
+        <h1 class="post-title" itemprop="name headline">对于overflow的理解
+
           
         </h1>
 
@@ -388,7 +310,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <ol>
+        <ol>
 <li>给元素设置了该属性后，当该元素的内容超过给定的宽度和高度的属性时，那么超出的部分会被隐藏，并且不占用位置；<blockquote>
 <p>Html:</p>
 </blockquote>
@@ -407,27 +329,43 @@
 </li>
 </ol>
 
-        
-      
     </div>
 
     
     
     
+        
+      
+
       <footer class="post-footer">
-          <div class="post-eof"></div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+                <a href="/post/4ae88797.html" rel="prev" title="对box-sizing的理解">
+                  对box-sizing的理解 <i class="fa fa-chevron-right"></i>
+                </a>
+              
+            </div>
+          </div>
         
       </footer>
+    
   </div>
   
   
   
   </article>
 
-    
   </div>
-
-  
 
 
           </div>
@@ -446,6 +384,11 @@
 
   <aside class="sidebar">
     <div class="sidebar-inner">
+        
+        
+        
+        
+      
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
